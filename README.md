@@ -29,12 +29,12 @@ Encoder-Decoder models were originally built to solve such Seq2Seq problems.
 3. I have used LSTM for this task.
 
 ### The Encoder Block
-      The encoder part is an LSTM cell. It is fed in the input-sequence over time and it tries to encapsulate all its information and store it in its 
-      final internal states hₜ (hidden state) and cₜ (cell state). The internal states are then passed onto the decoder part, which it will use to try 
-      to produce the target-sequence. This is the ‘context vector’ which we were earlier referring to.The outputs at each time-step of the encoder part 
-      are all discarded.
+   The encoder part is an LSTM cell. It is fed in the input-sequence over time and it tries to encapsulate all its information and store it in its 
+   final internal states hₜ (hidden state) and cₜ (cell state). The internal states are then passed onto the decoder part, which it will use to try 
+   to produce the target-sequence. This is the ‘context vector’ which we were earlier referring to.The outputs at each time-step of the encoder part 
+   are all discarded.
       
 ### The Decoder Block
-      The decoder block is also an LSTM cell. The main thing to note here is that the initial states (h₀, c₀) of the decoder are set to the final states 
-      (hₜ, cₜ) of the encoder.These act as the ‘context’ vector and help the decoder produce the desired target-sequence.Now the way decoder works, is, that 
-      its output at any time-step t is supposed to be the tᵗʰ word in the target-sequence/Y_true. 
+   The decoder block is also an LSTM cell. The main thing to note here is that the initial states (h₀, c₀) of the decoder are set to the final states 
+   (hₜ, cₜ) of the encoder.These act as the ‘context’ vector and help the decoder produce the desired target-sequence.Now the way decoder works, is, that 
+   its output at any time-step t is supposed to be the tᵗʰ word in the target-sequence/Y_true. 
