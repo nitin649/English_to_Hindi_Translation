@@ -13,6 +13,13 @@ and producing fluent text in the output language.
 
 ## Model Aerchitecture 
 
+### Attention Mechanism
+1.    In psychology, attention is the cognitive process of selectively concentrating on one or a few things while ignoring others.
+      A neural network is considered to be an effort to mimic human brain actions in a simplified manner. Attention Mechanism is also 
+      an attempt to implement the same action of selectively concentrating on a few relevant things, while ignoring others in deep neural networks. 
+ 2.   The attention mechanism emerged as an improvement over the encoder decoder-based neural machine translation system in natural language processing 
+      (NLP). Later, this mechanism, or its variants, was used in other applications, including computer vision, speech processing, etc.
+
 ### Sequence to Sequence Modelling
 ![seq_2_seq](https://user-images.githubusercontent.com/55678844/149960315-3e1f8269-0303-44c4-aa8e-5a54ee75c8d3.png)
 
