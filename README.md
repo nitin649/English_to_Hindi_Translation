@@ -9,7 +9,7 @@ and producing fluent text in the output language.
 
 # Project Structure
 
-1. For the purpose of this project, we will use online dataset of english and hindi sentences. 
+1. For the purpose of this project,I have used online dataset of english and hindi sentences. 
 
 ## Model Aerchitecture 
 
